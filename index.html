@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CD covers</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>My Favorite games.</h1>
+  </div>
+  <div class="wrapper">
+    <div class="cover">
+      <img src="image/cover-ASTRONEER.png" alt="name">
+      <article>
+        <h3>ASTRONEER.</h3>
+        <h4>What does ASTRONEER have?</h4>
+        <ul>
+          <li>exploration.</li>
+          <li>crafting.</li>
+          <li>freedom (sandbox game).</li>
+          <li>surviving.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- einde van album -->
+    <div class="cover">
+      <img src="image/cover-firewatch.png" alt="name">
+      <article>
+        <h3>Firewatch.</h3>
+        <h4>What kind of game is firewatch?</h4>
+        <p>Firewatch is an adventure game developed by Campo Santo and published by Campo Santo in partnership with Panic.</p>
+      </article>
+    </div>
+    <!-- einde van album -->
+    <div class="cover">
+      <img src="image/cover-rocket-league.png" alt="name">
+      <article>
+        <h3>Rocket league.</h3>
+        <h4>What does rocket league have?</h4>
+        <ul>
+          <li>excitement.</li>
+          <li>strategy.</li>
+          <li>fun.</li>
+          <li>personalize.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- einde van album -->
+    <div class="cover">
+      <img src="image/cover-csgo.png" alt="name">
+      <article>
+        <h3>Counter strike global offensive.</h3>
+        <h4>What does counter strike global offensive have?</h4>
+        <ul>
+          <li>strategy.</li>
+          <li>excitement.</li>
+          <li>first person shooter.</li>
+          <li>teams.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- einde van album -->
+    <div class="cover">
+      <img src="image/cover-rainbow.png" alt="name">
+      <article>
+        <h3>Rainbow six siege.</h3>
+        <h4>What kind of game is rainbow six siege?</h4>
+        <p>Tom Clancy's Rainbow Six Siege (often shortened to Rainbow Six Siege) is a tactical shooter video game developed by Ubisoft Montreal.</p>
+      </article>
+    </div>
+    <!-- einde van album -->
+    <div class="cover">
+      <img src="image/cover-apex.png" alt="name">
+      <article>
+        <h3>Apex legends</h3>
+        <h4>What does apex legends have?</h4>
+        <ul>
+          <li>strategy.</li>
+          <li>first person shooter.</li>
+          <li>teams.</li>
+          <li>excitement.</li>
+        </ul>
+      </article>
+    </div>
+    <!-- einde van album -->
+  </div>
+  <script>
+    let alleAlbums = document.querySelectorAll('.cover');
+
+    const naarBoven = (e) => {
+      e.target.classList.remove('naarBeneden');
+      e.target.classList.add('naarBoven');
+    }
+    const naarBeneden = (e) => {
+      e.target.classList.remove('naarBoven');
+      e.target.classList.add('naarBeneden');
+    }
+    for (let i = 0; i < alleAlbums.length; i++) {
+      let album = alleAlbums[i];
+      album.addEventListener('mouseenter', naarBoven);
+      album.addEventListener('mouseleave', naarBeneden);
+    }
+  </script>
+  <div id="validatie">
+
+         <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+           <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+
+           <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+             <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+           </a>
+   </div>
+</body>
+
+</html>
